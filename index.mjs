@@ -19,9 +19,3 @@ wss.on('connection', connection => {
   connection.send(`connected to server-${APPID}`)
   connection.on('message', message => publisher.publish('foobar-channel', message))
 })
-
-
-// //clean up stuff for closed connections:
-//subscriber.unsubscribe()
-//subscriber.quit()
-//publisher.quit()
