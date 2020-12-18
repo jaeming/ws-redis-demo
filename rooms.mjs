@@ -1,7 +1,6 @@
 import WebSocket from "ws"
 import redis from "redis"
 
-const APPID = process.env.APPID
 const port = process.env.PORT
 
 const subscriber = redis.createClient()
